@@ -1,0 +1,18 @@
+mi_proyecto/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── scripts/
+│   ├── 01_load_data.R
+│   ├── 02_clean_data.R
+│   ├── 03_analysis.R
+│   └── 04_visualization.R
+├── outputs/
+│   ├── figures/
+│   └── reports/
+├── docs/                   # Carpeta para documentos RMarkdown o Quarto
+│   ├── informe.Rmd         # Documento RMarkdown
+│   └── presentacion.qmd    # Documento Quarto
+├── .env
+├── .gitignore
+└── README.md
