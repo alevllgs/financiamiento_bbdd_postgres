@@ -1,0 +1,12 @@
+# R
+.Rhistory
+.RData
+.Ruserdata
+
+# Variables de entorno
+.env
+
+# Datos procesados
+data/processed/
+data/raw/
+.Rproj.user
