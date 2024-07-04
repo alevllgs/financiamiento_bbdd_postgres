@@ -1,9 +1,0 @@
----
-title: "Informe de Análisis"
-author: "Tu Nombre"
-date: "2024-07-01"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
