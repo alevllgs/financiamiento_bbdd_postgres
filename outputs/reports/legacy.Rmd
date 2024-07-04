@@ -83,15 +83,15 @@ datatable(promedio_por_sigla, options = list(
 ```{r resultados-establecimientos, echo=FALSE, results='asis'}
 
 
-# Generar texto para cada establecimiento
-apply(info_completa, 1, function(x) {
+# Generar texto para cada establecimiento y suprimir el NULL
+invisible(apply(info_completa, 1, function(x) {
   cat(paste0("El costo promedio mensual para ", x["Establecimiento"], 
              " es de ", format(as.numeric(x["Costo directo promedio Mensual"]), big.mark = ".", decimal.mark = ",", digits = 2), 
              " unidades monetarias. Este establecimiento ha registrado un gasto máximo de ", 
              format(as.numeric(x["Maximo"]), big.mark = ".", decimal.mark = ",", digits = 2), 
              " y un mínimo de ", format(as.numeric(x["Minimo"]), big.mark = ".", decimal.mark = ",", digits = 2), 
              " unidades monetarias en los períodos reportados.\n\n"))
-})
+}))
 
 ```
 
@@ -165,11 +165,6 @@ plot(pressure, col = thematic::thematic_get_option("accent"))
 ```{r}
 plot(pressure, col = thematic::thematic_get_option("accent"))
 ```
-
-
-
-
-
 
 
 
